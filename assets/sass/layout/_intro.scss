@@ -1,5 +1,7 @@
 ///
-
+/// Massively by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
 /* Intro */
@@ -7,7 +9,7 @@
 	#intro {
 		@include color-typography(invert);
 		@include color-button(invert);
-		@include padding(_size(padding), _size(padding) * 0.5);
+		@include padding(_size(padding) * 4, _size(padding) * 2);
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
@@ -20,7 +22,7 @@
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 50vh;
+		min-height: 100vh;
 
 		h1 {
 			font-size: 5rem;
@@ -35,7 +37,7 @@
 		}
 
 		& + #header {
-			margin-top: -20rem;
+			margin-top: 0;
 
 			.logo {
 				@include vendor('transform', 'translateY(2rem)');
